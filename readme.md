@@ -1,4 +1,4 @@
-#Buttons and Switches 
+# Buttons and Switches 
 This application is used for interacting with different buttons and switches with in a application.
 The status from the buttons/switches can always be read out and/or you can define a call back handler to respone to a button press or if the position of the switch is changed.
 It support an total maximum of 8 buttons and switches. The application is fully interupt driven. 
@@ -77,8 +77,8 @@ The key handler call back routine should be defined like this
 ```
 static void key_handler(uint32_t key_state, uint32_t has_changed, uint8_t key_type)
 ```
-keystate:		Contains all button and switch states
-has_changed:	The button or switch that raised the event
-				buttons only raise the event when pressed
-				switch raised the event for on and off position
-key_type:		Was the event raised by a button or switch or a long pressed button
+<b>keystate:</b> Contains all button and switch states<br>
+
+<b>has_changed:</b> The button or switch that raised the event buttons only raise the event when pressed switch raised the event for on and off position<br>
+
+<b>key_type:</b> Was the event raised by a button or switch or a long pressed button
