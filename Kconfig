@@ -1,0 +1,26 @@
+#
+# Copyright (c) 2020 Nordic Semiconductor ASA
+#
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+#
+
+menu "MyKeys Settings"
+
+config KEY_LONGPRESSED_TIME
+	int "Time to hold key before triggering the Long Press event (mS)."
+	default 2000
+
+config KEY_BOUNCE_TIME
+	int "Debounce time for all keys (mS)."
+	default 2
+
+
+endmenu
+
+module = MyKeys
+module-str = My button and switches handler
+source "${ZEPHYR_BASE}/subsys/logging/Kconfig.template.log_config"
+
+menu "Zephyr Kernel"
+source "Kconfig.zephyr"
+endmenu

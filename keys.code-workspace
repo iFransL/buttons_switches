@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "keys",
+			"path": "."
+		}
+	],
+	"settings": {
+		"nrf-connect.applications": [
+			"${workspaceFolder}"
+		],
+		"nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.0.2}",
+		"files.associations": {
+			"exception": "c",
+			"cmath": "c",
+			"limits": "c",
+			"*.tcc": "c",
+			"typeinfo": "c"
+		}
+	}
+}
